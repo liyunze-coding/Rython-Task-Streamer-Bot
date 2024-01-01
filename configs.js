@@ -239,7 +239,7 @@ const configs = (function () {
 	const clearedAll = "All tasks have been cleared";
 	const clearedDone = "All finished tasks have been cleared";
 	const nextNoContent = "Try using !next the-task-you-want-to-do-next {user}";
-	const help = `{user} Use the following commands to help you out - !task !remove !edit !done. For more commands, click here: https://github.com/liyunze-coding/Chat-Task-Tic-Widget-Streamer-Bot#commands`;
+	const help = `{user} Use the following commands to help you out - !task !remove !edit !done. For more commands, click here: https://github.com/liyunze-coding/Rython-Task-Streamer-Bot#commands`;
 
 	const additionalCommands = {
 		"!botcred":

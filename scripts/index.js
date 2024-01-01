@@ -62,8 +62,6 @@ function onData(data) {
 	if (data.event.source === "YouTube" && data.event.type === "Message") {
 		const payload = data.data;
 
-		console.log("payload", payload);
-
 		// check if message starts with prefix
 		if (!payload.message.startsWith("!")) return;
 
@@ -86,9 +84,9 @@ function onData(data) {
 		data.event.source === "Twitch" &&
 		data.event.type === "ChatMessage"
 	) {
-		console.log("Twitch message event", data);
-
 		const payload = data.data;
+
+		if (!payload.message.startsWith("!")) return;
 
 		const command = payload.message.message.split(" ")[0];
 
