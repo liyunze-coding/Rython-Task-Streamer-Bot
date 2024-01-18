@@ -14,6 +14,7 @@
         -   [Moderators only](#moderators-only)
     -   [Why you should use this](#why-you-should-use-this)
     -   [Installation](#installation)
+        -   [Note for YouTube Streamers:](#note-for-youtube-streamers)
     -   [Customization settings](#customization-settings)
         -   [settings](#settings)
         -   [fonts](#fonts)
@@ -85,6 +86,11 @@ For aliases, see [here](#aliases)
 
 -   Local File: `checked`
 -   Browse to `index.html`
+
+### Note for YouTube Streamers:
+
+-   If you're adding an alt account as a bot, be sure to set alt account as moderator (/moderator @alt_account)
+-   If there's some errors, try creating a channel for the alt account
 
 ---
 
