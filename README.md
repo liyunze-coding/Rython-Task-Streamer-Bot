@@ -64,15 +64,17 @@ For aliases, see [here](#aliases)
 
 ## Installation
 
-1.  Install [Streamer.bot](https://streamer.bot/)
+1.  On this page, click the green "Code" button > Install ZIP
 
-2.  Follow instruction video [HERE](https://youtu.be/CcXAs-qZ0Ys?t=116) on how to setup Streamer.bot \(until 5:43 timestamp\)
+2.  Install [Streamer.bot](https://streamer.bot/)
 
-3.  Import StreamerBot Files `StreamerBotImport` as shown in this [VIDEO](https://youtu.be/eXn2zCu0k6k?t=298)
+3.  Follow instruction video [HERE](https://youtu.be/CcXAs-qZ0Ys?t=116) on how to setup Streamer.bot \(until 5:43 timestamp\)
+
+4.  Import StreamerBot Files `StreamerBotImport` as shown in this [VIDEO](https://youtu.be/eXn2zCu0k6k?t=298)
 
     -   set Auto Connect to Checked (recommended)
 
-4.  On StreamerBot, go to `Servers/Clients` > `Websocket Server`, and change to the following settings
+5.  On StreamerBot, go to `Servers/Clients` > `Websocket Server`, and change to the following settings
 
     ![Websocket server settings](images/websocket_settings.png)
 
@@ -82,7 +84,7 @@ For aliases, see [here](#aliases)
     -   Endpoint: `/`
     -   `Start Server`
 
-5.  Setup `Browser Source` in OBS studio or other streaming software with the following settings:
+6.  Setup `Browser Source` in OBS studio or other streaming software with the following settings:
 
 -   Local File: `checked`
 -   Browse to `index.html`
