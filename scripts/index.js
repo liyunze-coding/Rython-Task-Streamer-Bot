@@ -86,7 +86,7 @@ function onData(data) {
 	) {
 		const payload = data.data;
 
-		if (!payload.message.startsWith("!")) return;
+		if (!payload.message.message.startsWith("!")) return;
 
 		const command = payload.message.message.split(" ")[0];
 
