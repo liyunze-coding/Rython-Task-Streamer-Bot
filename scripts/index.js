@@ -202,7 +202,7 @@ function procressCommand(user, command, message, flags, source) {
 
 		if (!userHasTask(user)) {
 			// check if user has a task pending
-			return respond(responseTemplates.noTaskToEdit, params);
+			return respond(responseTemplates.noTaskToEdit, params, source);
 		}
 		editTask(user, message);
 
@@ -213,7 +213,7 @@ function procressCommand(user, command, message, flags, source) {
 		if (message === "") {
 			if (checkTask(user) === "") {
 				// check if user has a task pending
-				return respond(responseTemplates.noTask, params);
+				return respond(responseTemplates.noTask, params, source);
 			}
 
 			let currentTask = checkTask(user);
@@ -233,7 +233,7 @@ function procressCommand(user, command, message, flags, source) {
 
 			if (currentTask === "") {
 				// check if user has a task pending
-				return respond(responseTemplates.noTaskA, params);
+				return respond(responseTemplates.noTaskA, params, source);
 			}
 
 			let response = responseTemplates.taskCheckUser;
@@ -252,7 +252,7 @@ function procressCommand(user, command, message, flags, source) {
 		}
 		clearAllTasks();
 
-		respond(responseTemplates.clearedAll, params);
+		respond(responseTemplates.clearedAll, params, source);
 	} else if (commands.adminDeleteCommands.includes(command)) {
 		if (!isMod(flags)) {
 			// user is not a mod or broadcaster
@@ -263,7 +263,7 @@ function procressCommand(user, command, message, flags, source) {
 	} else if (commands.nextTaskCommands.includes(command)) {
 		if (!userHasTask(user)) {
 			// check if user has a task pending
-			return respond(responseTemplates.noTask, params);
+			return respond(responseTemplates.noTask, params, source);
 		}
 
 		if (message === "") {
@@ -276,7 +276,7 @@ function procressCommand(user, command, message, flags, source) {
 		response = response.replace("{oldTask}", completedTask);
 		response = response.replace("{newTask}", message);
 
-		return respond(response, params);
+		return respond(response, params, source);
 	} else if (commands.helpCommands.includes(command)) {
 		respond(responseTemplates.help, params, source);
 	} else if (commands.additionalCommands[command]) {
