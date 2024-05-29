@@ -4,7 +4,7 @@ const settings = configs.settings;
 
 const client = new StreamerbotClient({
 	host: "127.0.0.1",
-	port: 6968,
+	port: settings.port,
 	subscribe: {
 		YouTube: ["Message"],
 		Twitch: ["ChatMessage"],

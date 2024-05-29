@@ -650,28 +650,21 @@ function cancelAnimation() {
  * It then waits for 1000 milliseconds before moving on to the next streamer.
  */
 async function tests() {
-	let listOfStreamers = [
-		`cloudydayzzz`,
-		`berryspace`,
-		`MohFocus`,
-		`xeno_hiraeth`,
-		`euphie___`,
-		`unknownnie`,
-		`theyolotato`,
-		`charliosaurus`,
-		`jutstreams`,
-		`mikewhatwhere`,
-		`studypaws`,
-		`pcc_lanezzz`,
-		`workwithjandj`,
-		`studylena`,
+	let listofTasks = [
+		"Try out this task widget!",
+		"Add your own tasks!",
+		"Customize the styles!",
+		"Change the settings!",
+		"Add animations!",
+		"Make it your own!",
+		"Follow RythonDev on Twitch!",
 	];
 
 	// loop through list of streamers
-	for (let i = 0; i < listOfStreamers.length; i++) {
-		addTask(listOfStreamers[i], "#fff", `test task ${i}`);
+	for (let i = 0; i < listofTasks.length; i++) {
+		addTask(`chatter${i}`, `${listofTasks[i]}`);
 		await sleep(100);
-		doneTask(listOfStreamers[i]);
+		// doneTask(`chatter${i}`);
 
 		await sleep(1000);
 	}
