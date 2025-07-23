@@ -2,7 +2,7 @@ const configs = (function () {
 	"use strict";
 
 	// settings
-	const port = 6968; // must be a 4 digit number
+	const port = 8080; // must be a 4 digit number
 	const showDoneTasks = true; // true or false
 	const showTasksNumber = true; // true or false
 	const crossTasksOnDone = true; // true or false
